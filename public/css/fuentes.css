@@ -12,11 +12,18 @@
   font-family: "HelveticaNeue";
   font-weight: 500;
 }
-
+.helvetica-light{
+  font-family: "HelveticaNeue";
+  font-weight: 100;
+}
 .ahroni{
   font-family: "Ahroni";
 }
 
 .ddle-txt-menu-1{
   font-size: clamp(5em,5.1em,7em);
+}
+
+.mayus{
+  text-transform: uppercase;  
 }
