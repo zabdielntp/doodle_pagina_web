@@ -1,0 +1,22 @@
+/*Fuentes*/
+@font-face {
+    font-family: "Ahroni";
+    src: url(/public/fuentes/ahronbd.ttf) format("truetype");
+  }
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(/public/fuentes/HelveticaNeueMedium.otf);
+}
+
+.helvetica{
+  font-family: "HelveticaNeue";
+  font-weight: 500;
+}
+
+.ahroni{
+  font-family: "Ahroni";
+}
+
+.ddle-txt-menu-1{
+  font-size: clamp(5em,5.1em,7em);
+}
