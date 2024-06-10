@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <link href='/public/css/index.css' rel="stylesheet">
+    <link href='/public/css/fuentes.css' rel="stylesheet">
+</head>
+
+<body>
+    <div x-data="{ open: false }">
+        <div class="fixed top-0 right-5 z-20 ">
+            <button x-on:click="open = ! open " class="px-4 py-2">
+                <img src="/public/vectores/hamburguesa_boton.svg" height="50px" width="50px">
+                <img src="/public/vectores/hamburguesa mordida_boton.svg" height="50px" width="50px">
+            </button>
+        </div>
+        <div x-show="open" class="fixed inset-0 z-10 overflow-hidden">
+            <div x-show="open" x-transition:enter="transition-opacity ease-out duration-300"
+                x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                x-transition:leave="transition-opacity ease-in duration-300" x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0" class="absolute inset-0 bg-opacity-75 transition-opacity ddle-menu">
+            </div>
+            <!-- Sidebar Content -->
+            <section class="absolute inset-y-0 left-0  max-w-full flex">
+                <div x-show="open" x-transition:enter="transition-transform ease-out duration-300"
+                    x-transition:enter-start="transform translate-x-full"
+                    x-transition:enter-end="transform translate-x-0"
+                    x-transition:leave="transition-transform ease-in duration-300"
+                    x-transition:leave-start="transform translate-x-0"
+                    x-transition:leave-end="transform translate-x-full" class="w-screen">
+
+                    <div class="h-full flex flex-col py-6 shadow-xl  justify-between px-16 z-20">
+
+                        <!-- Sidebar Header -->
+                        <div class="flex items-center justify-between -mx-10 ">
+                            <h2 class="text-xl font-semibold text-black">doodle</h2>
+
+                        </div>
+                        <div class="flex items-center justify-between content-between px-4 py-10 grid grid-cols-1 z-50 h-100">
+                            <div class="flex grid-cols-2 gap-4">
+                                <div class="elemento-menu-texto">
+                                    <p class="ahroni ddle-txt-menu-1 text-black"> Inicio </p>
+                                </div>
+                                <div class="flex items-center justify-center elemento-menu-imagen">
+                                    <img class="object-contain" src="/public/vectores/lapiz.png">
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="flex grid-cols-2 gap-4">
+                                <div class="elemento-menu-texto">
+                                    <p class="ahroni ddle-txt-menu-1 text-black z-50"> Trabajos </p>
+                                </div>
+                                <div class="flex items-center justify-center elemento-menu-imagen">
+                                    <img class="object-contain" src="/public/vectores/lapiz.png">
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="flex grid-cols-2 gap-4">
+                                <div class="elemento-menu-texto">
+                                    <p class="ahroni ddle-txt-menu-1 text-black z-50"> Nosotros</p>
+                                </div>
+                                <div class="flex items-center justify-center elemento-menu-imagen">
+                                    <img class="object-contain" src="/public/vectores/lapiz.png">
+                                </div>
+                                
+                                
+                            </div>
+            
+                        </div>
+                        <!-- Sidebar Footer -->
+                        <div class="mt-6 px-4">
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div x-show="open" class="fixed inset-0 z-10 overflow-hidden">
+            
+            <!-- Sidebar Content -->
+            <section class="absolute inset-y-0 right-0 max-w-xl flex rounded-md ">
+                <div x-show="open" x-transition:enter="transition-transform ease-out duration-300"
+                    x-transition:enter-start="transform translate-x-full"
+                    x-transition:enter-end="transform translate-x-0"
+                    x-transition:leave="transition-transform ease-in duration-300"
+                    x-transition:leave-start="transform translate-x-0"
+                    x-transition:leave-end="transform translate-x-full" class="w-screen bg">
+
+                    <div class="h-full flex flex-col py-6 shadow-xl ddle-gris-1 rounded-l-full z-30">
+
+                        <!-- Sidebar Header -->
+                        <div class="flex items-center justify-between px-4">
+                            <h2 class="text-xl font-semibold text-black">---</h2>
+
+                        </div>
+                        <div class="flex items-center justify-between px-4">
+                            <p class="ahroni ddle-txt-menu-1 text-black z-50"> </p>
+                        </div>
+                        <!-- Sidebar Footer -->
+                        <div class="mt-6 px-4">
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+    <section class="py-12 mx-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class=" mb-12">
+                <h2 class="text-9xl text-center font-extrabold sm:text-6xl text-black">
+                    ¿Qué hacemos?
+                </h2>
+                <p class="mt-4 text-xl mayus helvetica-light">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium iure aperiam, temporibus ea nesciunt ad neque blanditiis voluptatem, vel excepturi nisi dolores placeat? Voluptatibus ad ea assumenda ipsum excepturi quia.
+                </p>
+            </div>
+        </div>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Tarjeta 1 -->
+                <div
+                    class="rounded-3xl ddle-gris-1 border-gris-1 shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <div class="mb-8">
+                        <div class="flex items-center justify-center">
+                            <img src="/public/images/AVE2.png" class="my-1 max-h-40">
+                        </div>
+                        <p class="mt-4 text-gray-400 font-black">Lorem ipsum, dolor sit amet </p>
+                        <p class="text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. In sunt nam quae quas et consequatur aliquid nobis molestias nihil error, tempora ut
+                            culpa
+                            odit! Omnis quas ea officia corporis nostrum.</p>
+                    </div>
+
+                </div>
+                <!-- Tarjeta 2 -->
+                <div
+                    class="rounded-3xl ddle-gris-1 border-gris-1 shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <div class="mb-8">
+                        <div class="flex items-center justify-center">
+                            <img src="/public/images/AVE_lapiz_.png" class="my-1 max-h-40">
+                        </div>
+                        <p class="mt-4 text-gray-400 font-black">Lorem ipsum, dolor sit amet </p>
+                        <p class="text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. In sunt nam quae quas et consequatur aliquid nobis molestias nihil error, tempora ut
+                            culpa
+                            odit! Omnis quas ea officia corporis nostrum.</p>
+                    </div>
+
+                </div>
+                <!-- Tarjeta 3 -->
+                <div
+                    class="rounded-3xl ddle-gris-1 border-gris-1 shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <div class="mb-8">
+                        <div class="flex items-center justify-center">
+                            <img src="/public/images/lapiz.png" class="my-1 max-h-40">
+                        </div>
+                        <p class="mt-4 text-gray-400 font-black">Lorem ipsum, dolor sit amet </p>
+                        <p class="text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. In sunt nam quae quas et consequatur aliquid nobis molestias nihil error, tempora ut
+                            culpa
+                            odit! Omnis quas ea officia corporis nostrum.</p>
+                    </div>
+
+                </div>
+                <!-- Tarjeta 4 -->
+                <div
+                    class="rounded-3xl ddle-gris-1 border-gris-1 shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <div class="mb-8">
+                        <div class="flex items-center justify-center">
+                            <img src="/public/images/tazadecafé.png" class="my-1 max-h-40">
+                        </div>
+                        
+                        <p class="mt-4 text-gray-400 font-black">Lorem ipsum, dolor sit amet </p>
+                        <p class="text-lg text-black">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. In sunt nam quae quas et consequatur aliquid nobis molestias nihil error, tempora ut
+                            culpa
+                            odit! Omnis quas ea officia corporis nostrum.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CREAR ALGO JUNTOS-->
+    <section class="seccion-dibujo my-14">
+        <div class="flex items-center justify-center">
+            <p class="text-9xl text-left font-extrabold sm:text-9xl text-black mayus"> Creemos algo <br><span class="text-left font-light sm:text-9xl text-black mayus">juntos</span></p>
+        </div>
+        <div class="ui-widget-content draggable-ntp">
+            <img src="/public/vectores/boton_ntp.png">
+        </div>
+        <div class="ui-widget-content draggable-ntp">
+            <img src="/public/vectores/hamburguesa_boton.svg">
+        </div>
+        <div class="ui-widget-content draggable-ntp">
+            <img src="/public/vectores/lapiz.png">
+        </div>
+        <div class="ui-widget-content draggable-ntp">
+            <img src="/public/vectores/portaretrato.png">
+        </div>
+        <div class="ui-widget-content draggable-ntp">
+            <img src="/public/vectores/llave.png">
+        </div>
+        <div class="ui-widget-content draggable-ntp">
+            <img src="/public/vectores/logo.png">
+        </div>
+    </section>
+    <!-- SECCION EQUIPO-->
+    <section>
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-3xl p-6 transform hover:scale-105 transition duration-300">
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".draggable-ntp").draggable();
+        });
+    </script>
+</body>
+
+</html>

@@ -12,6 +12,24 @@
     border-style:solid;
     border-width: 2px;    
 }
+.submenu-redondo{
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+.elemento-menu-texto{
+    color: aqua;
+}
+.elemento-menu-imagen{
+    visibility: hidden;
+}
+.elemento-menu-imagen img{
+    max-height: clamp(10px,50px,200px);
+
+
+}
+.elemento-menu-imagen:hover img{
+    visibility:visible
+}
 
 .seccion-dibujo{
     height: 750px;
@@ -20,6 +38,7 @@
     max-width: 100px;
     max-height: 100px;
 }
+
 
 body{
     background-color: #e8e8e8;
