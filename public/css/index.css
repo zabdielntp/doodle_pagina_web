@@ -1,46 +1,56 @@
-.ddle-menu{
- background-color: #e8e8e8;
+.ddle-menu {
+    background-color: #e8e8e8;
 }
-.ddle-gris-1{
+
+.ddle-gris-1 {
     background-color: #f2f2f2;
 }
-.ddle-gris-2{
+
+.ddle-gris-2 {
     background-color: #e8e8e8;
-   }
-.border-gris-1{
-    border-color: #000000;
-    border-style:solid;
-    border-width: 2px;    
 }
-.submenu-redondo{
+
+.border-gris-1 {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.submenu-redondo {
     border-top-left-radius: 100%;
     border-bottom-left-radius: 100%;
 }
-.elemento-menu-texto{
-    color: aqua;
+
+.elemento-menu:hover img {
+    display: block;
 }
-.elemento-menu-imagen{
-    visibility: hidden;
+.elemento-menu:hover p{
+    font-size: clamp(4em,5.1em,9em);
+}
+.elemento-menu img {
+    position: absolute;
+    margin-left: 20em;
+    
+    display: none;
 }
 .elemento-menu-imagen img{
-    max-height: clamp(10px,50px,200px);
-
-
+    max-height: clamp(10px, 50px, 200px);
 }
-.elemento-menu-imagen:hover img{
-    visibility:visible
+.portaretratos{
+    max-height: clamp(10px, 100px, 200px);
 }
 
-.seccion-dibujo{
+.seccion-dibujo {
     height: 750px;
 }
-.draggable-ntp{
+
+.draggable-ntp {
     max-width: 100px;
     max-height: 100px;
 }
 
 
-body{
+body {
     background-color: #e8e8e8;
 
 }
