@@ -17,8 +17,11 @@
 }
 
 .submenu-redondo {
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 100%;
+    border-radius: 50% 50% 50% 50%;
+    overflow: hidden;
+    height: 150%;
+    width: 60%;
+
 }
 
 .elemento-menu:hover img {
@@ -48,7 +51,11 @@
     max-width: 100px;
     max-height: 100px;
 }
-
+.sub-menu-productos a{
+    color: #000000;
+    font-size: clamp(10px,1.5em,60px);
+    
+}
 
 body {
     background-color: #e8e8e8;

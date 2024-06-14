@@ -5,16 +5,23 @@
   }
 @font-face {
   font-family: "HelveticaNeue";
-  src: url(/public/fuentes/HelveticaNeueMedium.otf);
+  src: url(/public/fuentes/HelveticaNeueMedium.otf) format("opentype");
 }
-
+@font-face {
+  font-family: "HelveticaNeueL";
+  src: url(/public/fuentes/HelveticaNeueLight.otf) format("opentype");
+}
 .helvetica{
   font-family: "HelveticaNeue";
   font-weight: 500;
 }
 .helvetica-light{
-  font-family: "HelveticaNeue";
-  font-weight: 100;
+  font-family: "HelveticaNeueL";
+  font-weight:lighter;
+}
+.helvetica-light-bold{
+  font-family: "HelveticaNeueL";
+  font-weight:bolder;
 }
 .ahroni{
   font-family: "Ahroni";
@@ -22,6 +29,10 @@
 
 .ddle-txt-menu-1{
   font-size: clamp(4em,7.1em,9em);
+}
+.ddle-txt-menu-2{
+  
+  font-size: clamp(15px,3em,80px);
 }
 
 .mayus{
