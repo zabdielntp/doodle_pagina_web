@@ -26,7 +26,7 @@
 <body class="bg-gray-100">
     <!-- Floating Button -->
     <button id="menuButton"
-        class="fixed top-4 right-4 p-4 rounded-full shadow-lg z-30 w-24 h-24 flex items-center justify-center">
+        class="top-4 right-4 p-4 rounded-full shadow-lg z-30 w-24 h-24 flex items-center justify-center">
         <img id="menuIcon" src='/public/vectores/hamburguesa_boton.svg' alt="Menu Icon" class="">
     </button>
 
@@ -97,6 +97,12 @@
             </div>
         </div>
     </div>
+    <section>
+        <video autoplay muted id="video-cabecera">
+            <source src="/public/videos/doodle_header.mp4">
+        </video>
+    </section>
+    <!-- SECCION TARJETAS -->
     <section class="py-12 mx-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class=" mb-12">
@@ -273,6 +279,7 @@
             menuIcon.src = isVisible ? '/public/vectores/hamburguesa_mordida_boton.svg' : '/public/vectores/hamburguesa_boton.svg';
         });
     </script>
+    <script src="/js/pausaVideoTiempo.js"></script>
 </body>
 
 </html>
