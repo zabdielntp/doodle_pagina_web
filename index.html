@@ -274,9 +274,10 @@
         menuButton.addEventListener('click', () => {
             const isVisible = mainMenu.classList.toggle('menu-visible');
             mainMenu.classList.toggle('menu-hidden');
-
+            
             // Cambiar el icono del botón dependiendo del estado del menú
             menuIcon.src = isVisible ? '/public/vectores/hamburguesa_mordida_boton.svg' : '/public/vectores/hamburguesa_boton.svg';
+            document.body.style.overflow = isVisible ? 'hidden' : "visible";
         });
     </script>
     <script src="/js/pausaVideoTiempo.js"></script>
